@@ -1,0 +1,8 @@
+User:
+  userName: string
+  password: string
+  role: Role
+
+Role:
+  id: string
+  nameRole: string
