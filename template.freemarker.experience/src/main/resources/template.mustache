@@ -1,0 +1,16 @@
+public class {{classSpecification.name}} {
+
+{{#classSpecification.fieldsSpecifications}}
+    private {{type}} {{name}};
+{{/classSpecification.fieldsSpecifications}}
+public {{classSpecification.name}} (){
+}
+{{#classSpecification.fieldsSpecifications}}
+    public {{type}} get{{capitalizedName}}() {
+    return this.{{name}};
+    }
+    public void set{{capitalizedName}} ({{type}} {{name}}) {
+    this.{{name}} = {{name}};
+    }
+{{/classSpecification.fieldsSpecifications}}
+}
